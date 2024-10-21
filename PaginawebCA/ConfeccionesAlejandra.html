@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confecciones Alejandra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://www.google.com/search?sca_esv=59a09235b25b809d&q=url+imagen+sobre+telas&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhdzTfxpAVBoexMFZnKJBpl_PqvG-U7jLA01U-4wZ8GtQRTLzY7AGc31mSzFEH8jDNpr7a4JGlmjT-zwIcXzAf-woi-NA4zCetR-9Z2fGJMIM2vbVUBSKCuV3NsAnG2NCupOyiGGfGa-n9g4HyxarGKjcpBUOc&sa=X&ved=2ahUKEwjCqqqLtPKIAxUoq5UCHcUIEasQtKgLegQIFRAB&biw=1366&bih=641'); 
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero button {
+            background-color: #ff6f61;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #e55b50;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 40px;
+        }
+
+        .products-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        #contacto form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #contacto form label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+
+        #contacto form input,
+        #contacto form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        #contacto form button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #contacto form button:hover {
+            background-color: #e55b50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Confecciones Alejandra</h1>
+    </header>
+
+    <section id="inicio">
+        <div class="hero">
+            <h2>LOS MEJORES PRODUCTOS PARA TU HOGAR</h2>
+            <p>Edredones, sábanas, mandiles, toallas, cortinas y más</p>
+            <button id="conocenosBtn">Conócenos más</button>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="products-grid">
+            <div class="product">
+                <a href="edredones/edredones.html">
+                    <img src="https://isatexhome.com/cdn/shop/files/IMG-7574_79b90558-5535-463e-a9a9-a7beedf42e2a.jpg?v=1713293852&width=3464.jpg" alt="Edredones">
+                    <h3>Edredones</h3>
+                    <p>Confort y estilo para un descanso perfecto.</p>
+                </a>
+            </div>            
+            <div class="product">
+                <a href="sabanas/sabanas.html">
+                    <img src="https://isatexhome.com/cdn/shop/files/834E9EDA-4ACD-40AD-9402-62975A36D98E.jpg?v=1698857065&width=2048.jpg" alt="Sábanas">
+                    <h3>Sábanas</h3>
+                    <p>Diseños exclusivos en algodón 100%.</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="mandiles/mandiles.html">
+                    <img src="https://w-static-p.extuid.com/139-superlarge_default/mandiles-para-ninos-personalizables-multiusos-regulables.jpg" alt="Mandiles">
+                    <h3>Mandiles</h3>
+                    <p>Elegancia y durabilidad para tu mesa.</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="toallas/toallas.html">
+                    <img src="https://decotextiles.com.pe/wp-content/uploads/2020/05/portada_1000.jpg" alt="Toallas">
+                    <h3>Toallas</h3>  
+                    <p>Suavidad y absorción excepcionales.</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="cortinas/cortinas.html">
+                    <img src="https://cortinas.net.pe/wp-content/uploads/cortinas-borlon-vainilla.jpg" alt="Cortinas">
+                    <h3>Cortinas</h3>
+                    <p>Diseños que armonizan con cualquier espacio.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="contactForm" action="#" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Confecciones Alejandra. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        //muestra mensaje al usuario
+        function mostrarMensaje(titulo, mensaje) {
+            alert(titulo + "\n\n" + mensaje);
+        }
+        
+        document.getElementById('conocenosBtn').addEventListener('click', function() {
+            mostrarMensaje("¡Bienvenido a Confecciones Alejandra!", "Aquí encontrarás los mejores productos textiles de alta calidad.");
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            mostrarMensaje("Mensaje Enviado", "Gracias por tu mensaje, nos pondremos en contacto contigo pronto.");
+            this.reset(); 
+        });
+    </script>
+</body>
+</html>
